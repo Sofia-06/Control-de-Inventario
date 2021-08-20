@@ -142,7 +142,7 @@ head>
     </div>
     <div class="container">
         <br>
-        <h1>Control de Inventario</h1>
+        <h1>REGISTRO</h1>
         
     </div>
     

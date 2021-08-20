@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Administrador</title>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+        <script>
+            $(function(){
+                $('.dropdown-trigger').dropdown();
+            })
+        </script>
+        <style>
+            .footer{
+                position:absolute;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                width: 100%;
+                height: 70px;
+                color: white;
+                font-family: "Mitr", sans-serif;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                background-color:black;
+            }
+            .footer p{
+                text-align: right;
+                margin-right: 50px;
+                position:relative;
+            }
+        </style>
+    </head>
+
+    <body class="teal">
+        <div class="container white" style="min-height: 100vh; padding: 20px">
+            <h1 align="center">Administrador</h1>
+            <div class="row">
+                <div class="col 14">
+    
+                    <ul class="collection">
+                        <a href="#!" class="collection-item">Crear Usuario</a>
+                        <a href="#!" class="collection-item">Agregar Producto</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="container black" style="min-height: 50vh; padding: 15px">
+                <div class="container white" style="min-height: 25vh; padding: 10px">
+                    <div class="row " align="center">
+                        <form method="post" action="?controller=Administrador&method=Rol" class="col s8">
+                            <div class="row">
+                                <div class="input-field col s12" >
+                                    <input id="Nombre" type="text" class="validate" required="" name="Nombre"/>
+                                    <label for="Nombre">Nombre</label>
+                                </div>
+                            </div>
+                    
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="Descripcion" type="text" class="validate" required="" name="Descripcion"/>
+                                    <label for="Descripcion">Descripcion</label>
+                                </div>
+                            </div>
+                    
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input class="btn waves-effect waves-light" type="submit" name="action"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+        
+                </div>
+    
+            </div>
+    
+    
+        </div>
+       
+
+        <div class="footer">
+            <p>Sistema de Inventario</p>
+        </div>
+
+
+    
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js">
+        </script>
+    
+        <script>
+     
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+     
+        </script>
+ 
+    </body>
+</html>
