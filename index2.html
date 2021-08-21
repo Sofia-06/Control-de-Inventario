@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingresar</title>
+    <title>Opciones</title>
     <link rel="icon" href="faviconconfiguroweb.png">
     <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color:rgb(204, 0, 255);
+            background-color:rgb(0, 89, 255);
         }
 
         .content{
@@ -98,21 +98,29 @@
 </head>
 <body>
     <div class = "content">
-        <h1>REGISTRO</h1>
+        <h1>Seleccione</h1>
         <form action="login.php" method="POST">
-            <label for="username">Usuario: </label>
-            <br>
-            <input type="text" name="username" placeholder="Ingresa tu usuario :" required>
-            <br>
-            <label for="pass">Contraseña: </label>
-            <br>
-            <input type="password" name="password" placeholder="Ingresa tu contraseña :" required>
+            <label for="username">Administrador: </label>
+            <a href="Administrador.html" class="regis">Click</a>
             <br>
             
+            <br>
+            <label for="pass">Trabajador: </label>
+            <a href="Trabajador.html" class="regis">Click</a>
+            <br>
+            
+            <br>
+            <label for="username">Info Empresa: </label>
+            <a href="EncabezadoPie.html" class="regis">Ingresar</a>
+            <br>
+
+            <br>
+            <label for="username">... </label>
+            <a href="index.html" class="regis">Salir</a>
+            <br>
         </form>
         <br>
-        <a href="index2.html" class="regis">Ingresar</a>
-        <a href="CrearUsuarios.html" class="regis">Crear Usuario</a>
+       
     </div>
     <div class="footer">
         <p>Sistema de Inventario</p>
